@@ -1,0 +1,150 @@
+.container{
+    width: 100%;
+    height: 1500px;
+    margin: auto;
+    background-image: linear-gradient(180deg, #070F2B 0%, #3b2f80 100%);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    color: white;
+    font-size: 30px;
+}
+.info {
+    color: white; /* Set text color to white */
+    margin-top: 150px;
+}
+.info p{
+    color: #B5C0D0
+}
+
+.header img {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+
+.top-bar{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 60px;
+}
+
+.top-bar input{
+    display: flex;
+    width: 362px;
+    height: 78px;
+    background: #211951;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.search-icon{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    background: #211951;
+    border-radius: 5px;
+}
+.weather-image{
+    margin: 29px;
+    display: flex;
+    justify-content: center;
+}
+.weather-temp{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 120px;
+    font-weight: 400;
+}
+.weather-location{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+.country{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+.data-container{
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* .element {
+    margin: auto;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+} */
+.element {
+    margin: auto;
+    gap: 12px;
+    display: flex;
+    flex-direction: column; /* Display elements as a column */
+    align-items: center;
+    font-size: 34px;
+}
+
+
+/* .data {
+    font-size: 34px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+.text{
+    font-size: 34px;
+    font-weight: 400;
+}
+.temp-icon {
+    fill: white; /* Rengi beyaz yap */
+}
+
+
+.icon{
+    margin-right: 10px; /* İkon ve metin arasındaki boşluğu ayarlar */
+}
+
+/* WeatherApp.css */
+.error-box {
+    background-color: #ffcccc;
+    padding: 10px;
+    border: 1px solid #ff3333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.error-message {
+    flex-grow: 1;
+    color: #ff3333;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    color: #ff3333;
+    cursor: pointer;
+}
