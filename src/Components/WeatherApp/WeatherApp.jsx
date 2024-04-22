@@ -1,5 +1,5 @@
-// WeatherApp.js
 import React, { useState } from 'react';
+import axios from 'axios'; 
 import './WeatherApp.css';
 import ErrorComponent from '../Error/Error';
 
@@ -12,8 +12,8 @@ import snow_icon from '../Assets/snow.png';
 import wind_icon from '../Assets/wind.png';
 import humidity_icon from '../Assets/humidity.png';
 import header_icon from '../Assets/header.png';
-import temp_icon from '../Assets/temp.png'
-import rain2_icon from '../Assets/rain2.png'
+import temp_icon from '../Assets/temp.png';
+import rain2_icon from '../Assets/rain2.png';
 
 export const WeatherApp = () => {
     let api_key = "d936c54fa85a929c1fb472e8361f657d";
@@ -29,13 +29,9 @@ export const WeatherApp = () => {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
 
         try {
-            let response = await fetch(url);
+            let response = await axios.get(url); // Use axios to make the GET request
 
-            if (!response.ok) {
-                throw new Error('City not found');
-            }
-
-            let data = await response.json();
+            let data = response.data;
 
             setWeatherData(data);
 
