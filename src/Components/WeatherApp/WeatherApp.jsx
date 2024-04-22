@@ -29,7 +29,7 @@ export const WeatherApp = () => {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
 
         try {
-            let response = await axios.get(url); // Use axios to make the GET request
+            let response = await axios.get(url); 
 
             let data = response.data;
 
